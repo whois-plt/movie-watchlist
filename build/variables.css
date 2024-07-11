@@ -1,0 +1,24 @@
+:root {
+  /* font sizes */
+  --header-title-font: 2.625rem;
+  --body-font: 0.875rem;
+  --movie-title-font: 1.125rem;
+  --movie-specs-info: 0.75rem;
+  /* font weights */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+  --weight-extra-bold: 800;
+  /**/
+  --body-line-height: 20px;
+  /* colors */
+  --white: #ffffff;
+  --black: #000000;
+  --dark: #111827;
+  --grey: #6b7280;
+  --star-yellow: #fec654;
+  --dark-grey: #374151;
+  --light-grey: #f9fafb;
+  --border-color: #d1d5db;
+  --alert-color: #c9c7c7;
+}

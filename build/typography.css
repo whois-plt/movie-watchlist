@@ -1,0 +1,88 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+html,
+button,
+input {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+span,
+p,
+a {
+  margin: 0;
+}
+
+.header-title,
+.nav {
+  color: var(--white);
+}
+
+.header-title {
+  font-size: var(--header-title-font);
+  font-weight: var(--weight-extra-bold);
+}
+
+.nav {
+  text-decoration: none;
+  font-size: var(--body-font);
+  font-weight: var(--weight-bold);
+}
+
+#search-input,
+#search-btn {
+  font-size: var(--body-font);
+  font-weight: var(--weight-medium);
+}
+
+#search-input {
+  color: var(--grey);
+}
+
+#search-btn {
+  color: var(--dark-grey);
+}
+
+.movie-title {
+  font-size: var(--movie-title-font);
+  font-weight: var(--weight-medium);
+  color: var(--black);
+}
+
+.movie-star,
+.movie-length,
+.movie-genre,
+.add-watchlist-btn {
+  font-size: var(--movie-specs-info);
+  color: var(--dark);
+}
+
+#clear-search-btn {
+  color: var(--white);
+  font-size: var(--movie-specs-info);
+}
+
+.movie-star i::before {
+  color: var(--star-yellow);
+}
+
+.movie-plot {
+  font-size: var(--body-font);
+  line-height: var(--body-line-height);
+  color: var(--grey);
+}
+
+.alert {
+  font-size: var(--movie-title-font);
+  font-weight: var(--weight-bold);
+  color: var(--alert-color);
+}
+
+.text-align--center {
+  text-align: center;
+}
