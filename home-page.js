@@ -77,6 +77,8 @@ function getWatchlistBtn(data) {
     } else {
       return btn
     }
+  } else {
+    return btn
   }
 }
 

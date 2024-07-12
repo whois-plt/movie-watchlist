@@ -1,10 +1,10 @@
 import { apiKey as key } from "./build/functions.js"
 const mainContent = document.querySelector(".container__main-content")
-const localStorageData = JSON.parse(localStorage.getItem("movieIDs"))
+const storedMovies = JSON.parse(localStorage.getItem("movieIDs"))
 
 mainContent.innerHTML = ""
 
-if (localStorageData.length > 0 && localStorageData) {
+if (storedMovies) {
   getStoredMovies()
 } else {
   mainContent.innerHTML = `
@@ -57,6 +57,9 @@ function removeFromWatchlist(watchlistBtn, movieList, storedMovies) {
         return movies !== btn.id
       })
       localStorage.setItem("movieIDs", JSON.stringify(arr))
+      if (storedMovies.length < 2) {
+        localStorage.removeItem("movieIDs")
+      }
       location.reload()
     })
   })
