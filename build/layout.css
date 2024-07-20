@@ -187,7 +187,7 @@ img {
   margin-right: 4px;
 }
 
-.btn-disabled {
+.watchlist-btn:disabled {
   cursor: not-allowed;
   color: var(--alert-color);
 }

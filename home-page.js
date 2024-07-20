@@ -73,7 +73,7 @@ function getWatchlistBtn(data) {
 
   if (storedMovies) {
     if (storedMovies.includes(data)) {
-      return `<button class="watchlist-btn btn-disabled">Added</button>`
+      return `<button class="watchlist-btn" disabled>Added</button>`
     } else {
       return btn
     }
@@ -93,7 +93,7 @@ function addToWatchlist(watchlistBtn) {
     btn.addEventListener("click", () => {
       movieIDArr.push(btn.id)
       btn.innerHTML = `Added`
-      btn.classList.add("btn-disabled")
+      btn.disabled = true
       localStorage.setItem("movieIDs", JSON.stringify(movieIDArr))
     })
   })
